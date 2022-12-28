@@ -8,7 +8,7 @@
 
 string[] massiv1 = new string[5] { "234", "34", "hello", "world", "res" };
 string[] massiv2 = new string[massiv1.Length];
-int count = 0;
+
 void SecondArrayWithIF(string[] massiv1, string[] massiv2)
 {
     int count = 0;
