@@ -6,29 +6,29 @@
 //  лучше обойтись исключительно массивами
 
 
-string[] array1 = new string[5] { "234", "34", "hello", "world", "res" };
-string[] array2 = new string[array1.Length];
+string[] massiv1 = new string[5] { "234", "34", "hello", "world", "res" };
+string[] massiv2 = new string[massiv1.Length];
 int count = 0;
-void SecondArrayWithIF(string[] array1, string[] array2)
+void SecondArrayWithIF(string[] massiv1, string[] massiv2)
 {
     int count = 0;
-    for (int i = 0; i < array1.Length; i++)
+    for (int i = 0; i < massiv1.Length; i++)
     {
-        if (array1[i].Length <= 3)
+        if (massiv1[i].Length <= 3)
         {
-            array2[count] = array1[i];
+            massiv2[count] = massiv1[i];
             count++;
         }
     }
 }
-void PrintArray(string[] array)
+void PrintArray(string[] massiv)
 {
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < massiv.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        Console.Write($"{massiv[i]} ");
     }
     Console.WriteLine();
 }
-SecondArrayWithIF(array1, array2);
-PrintArray(array2);
+SecondArrayWithIF(massiv1, massiv2);
+PrintArray(massiv2);
 
