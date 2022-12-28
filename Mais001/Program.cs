@@ -11,13 +11,13 @@ string[] massiv2 = new string[massiv1.Length];
 
 void SecondArrayWithIF(string[] massiv1, string[] massiv2)
 {
-    int count = 0;
+    int Num = 0;
     for (int i = 0; i < massiv1.Length; i++)
     {
         if (massiv1[i].Length <= 3)
         {
-            massiv2[count] = massiv1[i];
-            count++;
+            massiv2[Num] = massiv1[i];
+            Num++;
         }
     }
 }
